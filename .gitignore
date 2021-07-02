@@ -156,6 +156,8 @@ vite.config.ts.timestamp-*.mjs
 
 ### OSX ###
 # General
+*.sublime-workspace
+log/capistrano.log
 
 # Icon must end with two \r
 
