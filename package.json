@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "run-s format type:check build:vite build:postoptimize",
+    "build": "run-s format build:vite build:postoptimize",
     "preview": "vite preview",
     "https-preview": "vite build && serve dist",
     "dev": "vite",
