@@ -44,7 +44,7 @@ namespace :deploy do
   task :yarn_deploy do
     on roles fetch(:yarn_roles) do
       within fetch(:yarn_target_path, release_path) do
-        execute fetch(:yarn_bin), 'run build'
+        execute 'export NODE_OPTIONS="--max_old_space_size=4096";', fetch(:yarn_bin), 'run build'
       end
     end
   end
